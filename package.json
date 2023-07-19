@@ -1,0 +1,27 @@
+{
+	"name": "website-ab-testing-tool",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"author": "",
+	"devDependencies": {
+		"browser-sync": "^2.29.3",
+		"browser-sync-webpack-plugin": "^2.3.0",
+		"laravel-mix": "^6.0.49",
+		"sass": "^1.63.6",
+		"sass-loader": "^12.6.0"
+	},
+	"browserslist": [
+		"chrome 80",
+		"firefox 72",
+		"safari 13",
+		"edge 80",
+		"ie 11"
+	],
+	"main": "webpack.mix.js",
+	"scripts": {
+		"dev": "node_modules/.bin/mix",
+		"watch": "node_modules/.bin/mix watch",
+		"prod": "node_modules/.bin/mix --production"
+	}
+}
