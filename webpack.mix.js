@@ -32,6 +32,11 @@ mix.browserSync(
         watchTask: true,
         proxy: {
             target: process.env.URL,
+            proxyRes: [
+                function (proxyRes, req, res) {
+                    proxyRes.headers['Custom-Header-Example'] = 'Hello World!';
+                }
+            ]
         },
         serveStatic: ["./assets"],
         files: ['assets/dist/app.js', 'assets/dist/style.css'],
